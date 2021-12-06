@@ -1,0 +1,139 @@
+.wrapper_comments {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.15rem;
+}
+.comments {
+  &__quantity-comment {
+    text-align: start;
+  }
+  &__update {
+    span {
+      font-size: 14px;
+    }
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    @media (max-width: 321px) {
+      font-size: 10px;
+    }
+    textarea {
+      font-size: 16px;
+      width: 150px;
+      height: 38.5px;
+      margin-right: 10px;
+      @media (max-width: 1023px) {
+        width: 150px;
+      }
+      @media (max-width: 767px) {
+        width: 130px;
+        height: 30px;
+      }
+      @media (max-width: 468px) {
+        width: 100px;
+        height: 20px;
+      }
+      @media (max-width: 321px) {
+        width: 70px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__add {
+    span {
+      font-size: 16px;
+    }
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    textarea {
+      font-size: 18px;
+      width: 500px;
+      height: 40px;
+      margin-left: 3px;
+      @media (max-width: 1023px) {
+        width: 500px;
+      }
+      @media (max-width: 767px) {
+        width: 300px;
+      }
+      @media (max-width: 468px) {
+        width: 150px;
+      }
+    }
+  }
+  &__body {
+    margin: 10px;
+    text-align: start;
+  }
+}
+.comment {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  &__text {
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    &-update {
+      padding-left: 5px;
+      display: flex;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+    a {
+      font-size: 12px;
+      padding-left: 10px;
+      @media (max-width: 468px) {
+        font-size: 10.5px;
+        padding-left: 0px;
+      }
+    }
+    img {
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      margin-right: 5px;
+    }
+  }
+  &__likes {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    flex: 1 0 auto;
+    text-align: end;
+    margin-right: 10px;
+    a {
+      padding-left: 10px;
+    }
+    :hover {
+      color: #105de7;
+    }
+    &-icon {
+      cursor: pointer;
+    }
+  }
+  &__children {
+    margin-left: auto;
+    max-width: 95%;
+    slot {
+      background: #b1bdce;
+      margin-bottom: 20px;
+    }
+  }
+}
+.box {
+  @media (min-width: 1023px) {
+    margin-bottom: 0 !important;
+  }
+}

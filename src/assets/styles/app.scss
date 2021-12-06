@@ -1,0 +1,25 @@
+@import 'auth/auth';
+@import '~bulma';
+@import '../../components/common/input';
+@import 'pages/userProfile';
+@import 'layouts/header';
+@import 'pages/posts';
+@import 'pages/post';
+@import 'pages/comments';
+@import 'pages/blog';
+@import 'pages/create-post';
+@import 'pages/main-page';
+
+#app {
+  min-height: 100vh;
+  background-color: #fdf2e7;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+.loader {
+  margin: auto;
+  font-size: 20px;
+}

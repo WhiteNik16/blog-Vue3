@@ -1,0 +1,47 @@
+.posts {
+  margin: 10px auto;
+  @media (max-width: 1023px) {
+    margin: 10px 15px;
+  }
+  @media (max-width: 767px) {
+    margin: 10px 15px;
+  }
+  @media (max-width: 468px) {
+    margin: 10px 15px;
+  }
+  @media (max-width: 321px) {
+    margin: 10px 10px;
+  }
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    padding: 10px 0;
+    text-align: start;
+  }
+  &__image {
+    img {
+      max-height: 400px;
+      height: auto;
+    }
+    margin: 0 auto;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    &-likes {
+      cursor: pointer;
+      :hover {
+        color: #0699d9;
+      }
+    }
+  }
+}
+.like_active {
+  color: #0699d9;
+}

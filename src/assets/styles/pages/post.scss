@@ -1,0 +1,77 @@
+.post {
+  max-width: 85%;
+  margin: 15px auto;
+  &__title {
+    text-align: start;
+  }
+  &__back {
+    color: #1a1a1a;
+    padding-top: 10px;
+    text-align: start;
+    margin-left: 7.5%;
+    font-size: 21px;
+    i {
+      padding-right: 3px;
+      font-size: 20px;
+    }
+    :hover {
+      color: #105de7;
+    }
+  }
+  h2 {
+    font-size: 2.5rem;
+    @media (max-width: 468px) {
+      font-size: 2rem;
+    }
+  }
+  &__body {
+    margin-top: 20px;
+    text-align: start;
+    margin-bottom: 60px;
+    &-text {
+    }
+    img {
+      width: 55%;
+      height: auto;
+    }
+    &-comment {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  }
+  &__body-text {
+    text-align: start;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    &-author,
+    &-likes,
+    &-date {
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin-right: 5px;
+      }
+    }
+    &-comments,
+    &-likes {
+      flex: 1 1 auto;
+      justify-content: end;
+      cursor: pointer;
+      padding-left: 10px;
+      :hover {
+        color: #105de7;
+      }
+    }
+    &-date {
+      padding-left: 20px;
+      color: #b1bdce;
+    }
+  }
+}
